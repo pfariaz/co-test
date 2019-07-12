@@ -1,0 +1,31 @@
+{
+  "name": "co-test",
+  "version": "1.0.0",
+  "description": "test for comparaOnline",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha spec/*.js",
+    "after-30-days": "node src/services/productAfter30Days.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfariaz/co-test.git"
+  },
+  "keywords": [
+    "comparaonline",
+    "test",
+    "software",
+    "engineer"
+  ],
+  "author": "Pablo Farias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfariaz/co-test/issues"
+  },
+  "homepage": "https://github.com/pfariaz/co-test#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
+  }
+}
