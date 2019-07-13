@@ -23,7 +23,7 @@ const productsAtDayZero = [
   };
   
   for (let i = 0; i <= 30; i += 1) {
-    console.log(`Day ${i}`);
+    console.log(`-------- day ${i} --------`);
     console.log('name, sellIn, price');
     if (i == 0) {
       carInsurance.getProducts().forEach(productPrinter);

@@ -13,7 +13,7 @@ class SpecialFullCoverage extends Product {
             return;
         }
 
-        if (this.price < 50) {
+        if (this.price < 49) {
             if (this.sellIn <= 10 && this.sellIn >= 6){
                 this.price += 2;
             } else if (this.sellIn <= 5 && this.sellIn > 0) {
