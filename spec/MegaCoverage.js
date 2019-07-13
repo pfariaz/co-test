@@ -8,4 +8,12 @@ describe('MegaCoverage model', function() {
           expect(megaCoverage.name).to.equal("Mega Coverage")
         });
       });
+      describe('updating price', function() {
+        it('should call updatePrice but price and sellIn remain the same', function() {
+          const product = new MegaCoverage(10, 20);
+          product.updatePrice();
+          expect(product.getSellIn()).to.equal(10);
+          expect(product.getPrice()).to.equal(20);
+        });
+      });
 });

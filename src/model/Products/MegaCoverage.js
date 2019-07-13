@@ -5,6 +5,8 @@ class MegaCoverage extends Product {
     constructor(sellIn, price) {
         super(PRODUCT_NAMES.MEGA_COVERAGE, sellIn, price)
     }
+
+    updatePrice() { }
 }
 
 module.exports = MegaCoverage;
