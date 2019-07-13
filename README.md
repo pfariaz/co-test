@@ -1,4 +1,4 @@
-# ComparaOnline Test Requirements Specification
+# ComparaOnline Test
 
 Hi, here is my version of the Software Engineer CO Test.
 
