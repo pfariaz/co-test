@@ -7,11 +7,6 @@ class SpecialFullCoverage extends Product {
     }
 
     updatePrice() {
-        this.sellIn -= 1;
-        if(this.sellIn === 0) {
-            this.price = 0;
-            return;
-        }
 
         if (this.price < 49) {
             if (this.sellIn <= 10 && this.sellIn >= 6){
@@ -24,6 +19,12 @@ class SpecialFullCoverage extends Product {
         } else {
             this.price = 50;
         }
+
+        if(this.sellIn <= 0) {
+            this.price = 0;
+        }
+        
+        this.sellIn -= 1;
     }
 }
 

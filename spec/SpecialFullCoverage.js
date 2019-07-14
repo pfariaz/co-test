@@ -16,9 +16,9 @@ describe('SpecialFullCoverage model', function() {
           expect(product.getPrice()).to.equal(22);
         });
         it('should call updatePrice and degrates sellIn to zero and price too', function() {
-          const product = new SpecialFullCoverage(1, 20);
+          const product = new SpecialFullCoverage(0, 20);
           product.updatePrice();
-          expect(product.getSellIn()).to.equal(0);
+          expect(product.getSellIn()).to.equal(-1);
           expect(product.getPrice()).to.equal(0);
         });
         it('should call updatePrice and degrades sellIn and price increases one time', function() {
