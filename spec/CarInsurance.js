@@ -1,4 +1,5 @@
 const expect = require('chai').expect;
+
 const CarInsurance = require('../src/model/CarInsurance');
 const Product = require('../src/model/Product');
 
